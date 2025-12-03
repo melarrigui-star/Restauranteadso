@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #b685d6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16PX 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo h1{
+    color: white;
+    font-size: 29px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #000000;
+}
+
+.hero{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://images.unsplash.com/photo-1477617722074-45613a51bf6d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")center/cover;
+    height: 500px;     
+    display: flex;     
+    justify-content: center;     
+    align-items: center;     
+    color: rgb(255, 255, 255);     
+    text-align: center;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.reservar {
+    background-color: #e098ee;
+    border: none;
+    padding: 16px 32px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.reservar:hover {
+    background-color: #ce95d3;
+}
+
+.menu-section {
+    padding: 64px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-section {
+    text-align: center;
+    margin-bottom: 48px;
+    font-size: 40px;
+    color:#c53d0b
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.menu-card {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition:  background-color 0.5s ease;
+}
+
+.menu-card:hover {
+    background-color: #ffe6e0;
+    transform: translateY(-20px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 24px;
+    text-align: center;
+}
+
+.card-content h3 {
+    margin-bottom: 8px;
+    color:#da6132;
+    font-size: 24px;
+}
+
+.card-content p {
+    margin-bottom: 19px;
+    color:#555555;
+    font-size: 16px;
+}
+
+.price {
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    color:#da6132;
+    margin-bottom: 16px;   
+}
+
+.order-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;  
+}
+
+.order-btn:hover {
+    background-color: #902c08;
+    padding: 14px 5%;
+}
+
+.promotions-section {
+    background-color: #f78156;
+    padding: 12px 5%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 48px;
+    font-size: 40px;
+    color: #902c08;
+}
+
+.promo-card {
+    background-color: #eed0c5;
+    padding: 64px 5%;
+}
+
+.promotion-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.promo-card {
+    background-color: white;
+    padding: 32px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.promo-card h3 {
+    margin-bottom: 16px;
+    color:#da6132;
+    font-size: 28px;
+}
+
+.promo-price {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    color:#da6132;
+    margin-top: 16px;
+}
+
+.promo-card p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer{
+    
+background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 48px 5%;
+}
+
+.footer-content {
+     max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-bottom: 32px;
+}
+
+.footer-section h3 {
+    margin-bottom: 16px;
+    font-size: 24px;
+    color: #902c08;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer-section p {
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 32px;
+    border-top: 1px solid #902c08;
+}
+
+@media(max-width:768px){
+    .nav-links{
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+    .hero-content h2{
+        font-size: 2rem;
+    }
+    .hero-content p{
+        font-size: 2rem;
+    }
+}
+
+/*pantallas menores a 992px*/
+
+@media(max-width:992px){
+    .navbar{
+        padding: 1rem 3%;
+    }
+    .meni-gri, .promotion-container{
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        gap: 1.5rem;
+    }
+    .hero{
+        min-height: 350px;
+    }
+    .menu-sectiom,.promotions-section{
+        padding: 3rem 3%;
+    }
+ }
+ 
+ @media(max-width:768px){
+    .navbar{
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .logo h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .nav-links{
+        gap: 1rem;
+        font-size: 0.9rem;
+        justify-content: center;
+    }
+    .hero{
+        min-height: 300px;
+        padding: 1.5rem;
+    }
+    .menu-grid,.promotion-container{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .menu-card img{
+        height: 200px;
+    }
+    .card-content,.promo-card{
+        padding: 1.25rem;
+    }
+    .menu-section, .promotions-section{
+        padding: 2.5rem 4%;
+    }
+    .section-title{
+        margin-bottom: 2rem;
+    }
+    .footer{
+        padding: 2rem 4%;
+    }
+    .footer-content{
+        gap: 1.5rem;
+    }
+
+ }
