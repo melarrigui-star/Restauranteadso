@@ -11,7 +11,6 @@ function mostrarNotificacion() {
     }, 3000);
 }
 
-
 botonesAgregar.forEach(boton => {
     if (boton.innerText.includes("Agregar al carrito")) {
         boton.addEventListener('click', () => {
