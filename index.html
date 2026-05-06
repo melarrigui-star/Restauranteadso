@@ -6,10 +6,10 @@
     <title>Fast food paradice - Las mejores comidas rapidas</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    
 </head>
 <body>
-    <!-- Encabezado de la página -->
+   
     <header>
         <nav class="navbar">
             <div class="logo">
@@ -20,6 +20,12 @@
                 <li><a href="#menu">Menú</a></li>
                 <li><a href="#promociones">promociones</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <a href="#carrito" class="cart-container">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count">0</span>
+            </a>
+</li>
+                
             </ul>
         </nav>
     </header>
@@ -43,6 +49,7 @@
                 <p>Deliciosa hamburguesa con queso, lechuga, tomate y nuestra salsa especial.</p>
                 <span class="price">$20.000</span>
                 <button class="order-btn">Agregar al carrito</button>
+                
                     </div>
             </div>
             <!--Pizza-->
@@ -141,5 +148,7 @@
             <p>&copy: 2025 Fast Food Paradice. Todos los derechos reservados</p>
         </div>
     </footer>
+    <div id="toast" class="toast">Producto agregado</div>
+<script src="js/boton.js"></script>
 </body>
 </html>

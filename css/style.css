@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #b685d6;
+    background-color: #d25431;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     z-index: 1000;
@@ -22,7 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16PX 5%;
+    padding: 29PX 5%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -51,7 +51,7 @@ header {
 
 .hero{
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://images.unsplash.com/photo-1477617722074-45613a51bf6d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")center/cover;
-    height: 500px;     
+    height: 800px;     
     display: flex;     
     justify-content: center;     
     align-items: center;     
@@ -68,9 +68,63 @@ header {
     font-size: 48px;
     margin-bottom: 16px;
 }
+.cart-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    background-color: white; 
+    color: #ff6b35; 
+    font-size: 0.75rem;
+    font-weight: bold;
+    min-width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.toast {
+    visibility: hidden; 
+    min-width: 250px;
+    background-color: #de5a39; 
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    position: fixed;
+    z-index: 2000;
+    top: 100px; 
+    right: 5%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1; 
+    transform: translateY(0); 
+}
 
 .reservar {
-    background-color: #e098ee;
+    background-color: #8b8b8b;
     border: none;
     padding: 16px 32px;
     font-size: 20px;
@@ -80,7 +134,7 @@ header {
 }
 
 .reservar:hover {
-    background-color: #ce95d3;
+    background-color: #b64b28;
 }
 
 .menu-section {
